@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+
+        <style>
+            span
+            {
+                font-size:20em;
+            }
+
+            h1{color:crimson;}
+
+            body{ width:100%;}
+        </style>
+       
+    </head>
+    <body>
+        <center>
+            <h1>Values With Respect To Image Are Here</h1><br><br><br>
+            <div class='cont' style="width: 50%;float:right;padding:5px">
+                
+                <center>
+                <span>Red<sub>mean</sub>:&nbsp&nbsp{{data['rmean']}}</span><br>
+                <span>Blue<sub>mean</sub>:&nbsp&nbsp{{data['bmean']}}</span><br>
+                <span>Green<sub>mean</sub>:&nbsp&nbsp{{data['gmean']}}</span><br>
+                <span>Hue<sub>mean</sub>:&nbsp&nbsp{{data['hmean']}}</span><br>
+                <span>Saturation<sub>mean</sub>:&nbsp&nbsp{{data['smean']}}</span><br>
+                <span>Value<sub>mean</sub>:&nbsp&nbsp{{data['vmean']}}</span><br>
+                <br>
+                <br>
+                <a href="/" class='btn'><button style='font-size: 25px;'>Home Page</button></a>
+                </center>
+
+                
+
+            </div>
+
+
+            <div style="width: 40%;float:left">
+
+                <h3>Image Selected</h3>
+                
+                <img src="{{url_for('load_img')}}" alt='img' width='100%',height='100%'>
+                
+            
+            </div>
+
+            
+
+        </center>
+        
+    </body>
+</html>
